@@ -1,0 +1,33 @@
+name: Generate Snake
+
+# Control on which branches the action will run
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Check out the repository content
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Generate the snake
+    - name: Generate Snake
+      uses: Platane/snk@v2
+      with:
+        # github user name to generate the contribution snake
+        github_user_name: AndresDz2024
+        # output path
+        output: dist/snake.svg
+
+    # Push the generated snake.svg to the output branch
+    # The output branch will store the snake.svg and it will be accessible on the GitHub page
+    - name: Push Snake
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        branch: output
+        file: dist/snake.svg
