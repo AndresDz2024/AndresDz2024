@@ -25,7 +25,3 @@ Want to collaborate or have an exciting project idea? Feel free to reach out!
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AndresDz2024&show_icons=true&theme=radical)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AndresDz2024&layout=compact&theme=radical)
-
-## 🐍 GitHub Snake:
-![GitHub Snake](https://github.com/AndresDz2024/AndresDz2024/blob/output/github-contribution-grid-snake.svg)
-
